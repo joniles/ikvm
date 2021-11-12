@@ -3,6 +3,10 @@
 set CONFIGURATION=Release
 set TARGETFRAMEWORK=netcoreapp3.1
 
+set SNK_FILE=c:\ikvm\ikvm.snk
+rem https://docs.microsoft.com/en-us/dotnet/standard/assembly/create-signed-friend
+set SNK_PUBLIC_KEY=0024000004800000940000000602000000240000525341310004000001000100d56fa8640620333f3c1f6f8966f85627903252e6cf8132f85755b121d69945cefcc287c02d2b7eb9306bf00187dafc11dc386e02babdae5c1425d7b157fff42b63e7f0610497ca57bab593ac1ae6ebe82397414ecfa5c4056fc1e9551a246d6b06d1d3cf6d5898dbd910665b086aee57b1d88a3b3b23280617ec41961e2fd8d5
+
 set BUILDFLAGS=--nologo --no-dependencies -c %CONFIGURATION% -f %TARGETFRAMEWORK%
 
 dotnet build %BUILDFLAGS% tools\updbaseaddresses\updbaseaddresses.csproj

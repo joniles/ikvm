@@ -2659,11 +2659,14 @@ namespace IKVM.Internal
 			Tracer.Info(Tracer.Compiler, "JVM.Compile path: {0}, assembly: {1}", options.path, options.assembly);
 			AssemblyName runtimeAssemblyName = StaticCompiler.runtimeAssembly.GetName();
 			bool allReferencesAreStrongNamed = IsSigned(StaticCompiler.runtimeAssembly);
+			System.Console.WriteLine(StaticCompiler.runtimeAssembly.FullName + ": " + allReferencesAreStrongNamed);
 			List<Assembly> references = new List<Assembly>();
 			foreach(Assembly reference in options.references ?? new Assembly[0])
 			{
 				references.Add(reference);
 				allReferencesAreStrongNamed &= IsSigned(reference);
+				System.Console.WriteLine(reference.FullName + ": " + IsSigned(reference));
+
 				Tracer.Info(Tracer.Compiler, "Loaded reference assembly: {0}", reference.FullName);
 				// if it's an IKVM compiled assembly, make sure that it was compiled
 				// against same version of the runtime
@@ -2922,6 +2925,7 @@ namespace IKVM.Internal
 			if(!compilingCoreAssembly)
 			{
 				allReferencesAreStrongNamed &= IsSigned(JVM.CoreAssembly);
+				System.Console.WriteLine(JVM.CoreAssembly + ": " + IsSigned(JVM.CoreAssembly));
 				loader.AddReference(AssemblyClassLoader.FromAssembly(JVM.CoreAssembly));
 			}
 
