@@ -10,9 +10,9 @@
   
   <PropertyGroup Label="Assembly Signing">
     <!-- Optional Parameter: Supplying this will enable strong naming -->
-    <AssemblyOriginatorKeyFile></AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>$(SNK_FILE)</AssemblyOriginatorKeyFile>
     <!-- Optional Parameter: Required for strong naming (could automate if we check in sn.exe) -->
-    <PublicKey></PublicKey>
+    <PublicKey>$(SNK_PUBLIC_KEY)</PublicKey>
     <SignAssembly Condition=" '$(AssemblyOriginatorKeyFile)' != '' ">true</SignAssembly>
   </PropertyGroup>
 

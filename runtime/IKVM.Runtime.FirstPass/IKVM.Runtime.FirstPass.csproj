@@ -44,31 +44,31 @@
 
   <ItemGroup>
     <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
-      <_Parameter1>IKVM.Runtime.JNI</_Parameter1>
+      <_Parameter1>IKVM.Runtime.JNI, PublicKey=$(SNK_PUBLIC_KEY)</_Parameter1>
     </AssemblyAttribute>
     <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
-      <_Parameter1>IKVM.OpenJDK.Core</_Parameter1>
+      <_Parameter1>IKVM.OpenJDK.Core, PublicKey=$(SNK_PUBLIC_KEY)</_Parameter1>
     </AssemblyAttribute>
     <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
-      <_Parameter1>IKVM.OpenJDK.Util</_Parameter1>
+      <_Parameter1>IKVM.OpenJDK.Util, PublicKey=$(SNK_PUBLIC_KEY)</_Parameter1>
     </AssemblyAttribute>
     <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
-      <_Parameter1>IKVM.OpenJDK.Security</_Parameter1>
+      <_Parameter1>IKVM.OpenJDK.Security, PublicKey=$(SNK_PUBLIC_KEY)</_Parameter1>
     </AssemblyAttribute>
     <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
-      <_Parameter1>IKVM.OpenJDK.Management</_Parameter1>
+      <_Parameter1>IKVM.OpenJDK.Management, PublicKey=$(SNK_PUBLIC_KEY)</_Parameter1>
     </AssemblyAttribute>
     <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
-      <_Parameter1>IKVM.OpenJDK.Media</_Parameter1>
+      <_Parameter1>IKVM.OpenJDK.Media, PublicKey=$(SNK_PUBLIC_KEY)</_Parameter1>
     </AssemblyAttribute>
     <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
-      <_Parameter1>IKVM.OpenJDK.Misc</_Parameter1>
+      <_Parameter1>IKVM.OpenJDK.Misc, PublicKey=$(SNK_PUBLIC_KEY)</_Parameter1>
     </AssemblyAttribute>
     <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
-      <_Parameter1>IKVM.OpenJDK.Remoting</_Parameter1>
+      <_Parameter1>IKVM.OpenJDK.Remoting, PublicKey=$(SNK_PUBLIC_KEY)</_Parameter1>
     </AssemblyAttribute>
     <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
-      <_Parameter1>IKVM.OpenJDK.SwingAWT</_Parameter1>
+      <_Parameter1>IKVM.OpenJDK.SwingAWT, PublicKey=$(SNK_PUBLIC_KEY)</_Parameter1>
     </AssemblyAttribute>
   </ItemGroup>
 
